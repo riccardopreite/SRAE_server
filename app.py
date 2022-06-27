@@ -5,7 +5,6 @@ import torch, os, sys, math, json, random, shutil
 
 MODEL_DIR_NAME = "SRAE_model"
 sys.path.insert(1, '../'+MODEL_DIR_NAME+'/')
-# sys.path.insert(1, '../sustenaibility_machine_learning/')
 from srae import SRAE
 
 from build_model import create_template, train_template
