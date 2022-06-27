@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <script src="load_ui.js"></script>
+  <body style="width: 100%;height:100%;">
+    <div id="nav-placeholder"></div>
+    
+    <div id="app" style="width: 100%;height:100%;">
+      <div id="indicator" style="width: 100%;height:100%;"></div>
+      <div id="task" style="width: 100%;height:100%;"></div>
+      <div id="net" style="width: 100%;height:100%;"></div>
+    </div>
+    
+  </body>
+  <script>
+      $.get("nav.html", function(data){
+        // $.get("assets/html/nav.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+</html>
+
+
